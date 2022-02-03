@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Even - A super concise theme for Hugo</title>
+    <title>tamacake39&#39;s blog</title>
     <link>https://tamacake39.github.io/</link>
-    <description>Recent content on Even - A super concise theme for Hugo</description>
+    <description>Recent content on tamacake39&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 18 Dec 2021 20:34:26 +0900</lastBuildDate><atom:link href="https://tamacake39.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>学生マイクロマウス大会の感想（懺悔）</title>
-      <link>https://tamacake39.github.io/posts/20211218_203426/</link>
-      <pubDate>Sat, 18 Dec 2021 20:34:26 +0900</pubDate>
-      
-      <guid>https://tamacake39.github.io/posts/20211218_203426/</guid>
-      <description>これはWMMC Advent Calendar 2021の5日目の記事です． 学生マイクロマウス大会の感想（懺悔） 昨日（12月18日）、初めてのマイクロマウス大会、第36回</description>
-    </item>
+    <lastBuildDate>Thu, 03 Feb 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tamacake39.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>C#の入門をしたい</title>
-      <link>https://tamacake39.github.io/posts/20211201_001453/</link>
-      <pubDate>Wed, 01 Dec 2021 00:14:53 +0900</pubDate>
+      <title>Here is...</title>
+      <link>https://tamacake39.github.io/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tamacake39.github.io/posts/20211201_001453/</guid>
-      <description>この記事は、 MISW 56th Advent Calendar 2021の１日目の記事です。 C#の入門をしたい はじめましての方ははじめまして、そうでは無い方もはじめまして。どうも、56</description>
+      <guid>https://tamacake39.github.io/</guid>
+      <description>ほ〜むぺ〜じ ようこそ、たまかけのホームページへ。 ゆっくりしていってね .color { animation: a 1.0s linear 0s infinite; } @keyframes a { 0% { color: magenta; } 33% { color: cyan; } 67% { color: yellow; } 100% { color: magenta; } } .rotate { display:inline-block;</description>
     </item>
     
   </channel>
