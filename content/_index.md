@@ -1,4 +1,5 @@
 ---
+ispage: true
 title: "Here is..."
 date: 2022-02-03
 draft: false
@@ -33,3 +34,4 @@ categories: []
     100% { transform: scale(1.0, 2.0) rotate(360deg); }
 }
 </style>
+<br><br>

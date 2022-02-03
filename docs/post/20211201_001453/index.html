@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>C#の入門をしたい - tamacake39&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="たまかけ" /><meta name="description" content="この記事は、 MISW 56th Advent Calendar 2021の１日目の記事です。 C#の入門をしたい はじめましての方ははじめまして、そうでは無い方もはじめまして。どうも、56" /><meta name="keywords" content="たまかけ, ブログ, プログラミング, マイクロマウス" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://tamacake39.github.io/post/20211201_001453/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+
+
+
+<meta property="og:title" content="C#の入門をしたい" />
+<meta property="og:description" content="この記事は、 MISW 56th Advent Calendar 2021の１日目の記事です。 C#の入門をしたい はじめましての方ははじめまして、そうでは無い方もはじめまして。どうも、56" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tamacake39.github.io/post/20211201_001453/" />
+<meta property="article:published_time" content="2021-12-01T00:14:53+09:00" />
+<meta property="article:modified_time" content="2021-12-01T00:14:53+09:00" />
+<meta itemprop="name" content="C#の入門をしたい">
+<meta itemprop="description" content="この記事は、 MISW 56th Advent Calendar 2021の１日目の記事です。 C#の入門をしたい はじめましての方ははじめまして、そうでは無い方もはじめまして。どうも、56">
+<meta itemprop="datePublished" content="2021-12-01T00:14:53&#43;09:00" />
+<meta itemprop="dateModified" content="2021-12-01T00:14:53&#43;09:00" />
+<meta itemprop="wordCount" content="5490">
+
+
+
+<meta itemprop="keywords" content="C#,入門,アドベントカレンダー," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="C#の入門をしたい"/>
+<meta name="twitter:description" content="この記事は、 MISW 56th Advent Calendar 2021の１日目の記事です。 C#の入門をしたい はじめましての方ははじめまして、そうでは無い方もはじめまして。どうも、56"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Here is...</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Post</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Here is...</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Post</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">C#の入門をしたい</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-12-01 </span>
+        <div class="post-category">
+            <a href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/"> プログラミング </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">コンテンツ</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#cの入門をしたい">C#の入門をしたい</a>
+      <ul>
+        <li><a href="#cの入門をしなきゃいけないらしい">C＃の入門をしなきゃいけないらしい</a></li>
+        <li><a href="#環境構築">環境構築</a></li>
+        <li><a href="#ほんへ">ほんへ</a>
+          <ul>
+            <li><a href="#a問題">A問題</a></li>
+            <li><a href="#b問題">B問題</a></li>
+            <li><a href="#c問題">C問題</a></li>
+            <li><a href="#d問題">D問題</a></li>
+            <li><a href="#e問題">E問題</a></li>
+          </ul>
+        </li>
+        <li><a href="#感想">感想</a>
+          <ul>
+            <li><a href="#蛇足">蛇足</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>この記事は、 <a href="https://adventar.org/calendars/6434">MISW 56th Advent Calendar 2021</a>の１日目の記事です。</p>
+<h1 id="cの入門をしたい">C#の入門をしたい</h1>
+<p>はじめましての方ははじめまして、そうでは無い方もはじめまして。どうも、56代<del>何もしない研</del>プロ研の<a href="https://twitter.com/tamacake39">たまかけ</a>と申します。
+さて今回ですけれども、アドベントカレンダーを立てたはいいものの <strong>何を書けばいいんだ……</strong> となってしまって、それに12月2日、この記事が公開された翌日ですね、に微積のテストが迫っていたもので、軽めに書ける記事をやっていこうと思います。</p>
+<p>この記事は、自分のようなC/C++のの基礎文法がわかるよという人が、C#を始めるにあたってちょっと躓いたなというところをまとめてみる、という感じで書いていこうと思います。
+<br></p>
+<h2 id="cの入門をしなきゃいけないらしい">C＃の入門をしなきゃいけないらしい</h2>
+<p>なんやかんやでC#の入門をする必要が出てきてしまったので、早速入門していきます。私が新しい言語の入門をするとき、とりあえずその言語を使ってAtCoderの問題が解ければとりあえずの入門はできるだろと考えているので、今回は<a href="https://atcoder.jp/contests/abc218">AtCoder Beginner Contest 218</a>のA問題からE問題をC#を使って解いて行きます。
+AtCoderの問題解けた程度で言語の入門した気になってんじゃねーぞとの声が盛大に聞こえてきますが、そんなことは<a href="https://ja.uncyclopedia.info/wiki/%E8%AA%B0%E3%82%82%E6%B0%97%E3%81%AB%E3%81%97%E3%81%AA%E3%81%84">誰も気にしない</a>。
+まああとはC#といえば<strong>オブジェクト指向</strong>のなんとやらがアレでアレらしいので、そこらへんも触っていきます。
+<br></p>
+<h2 id="環境構築">環境構築</h2>
+<p>本来なら早速問題を解いて行きたいところなのですが、やっぱりプログラミング言語の入門にあたって環境構築というものは避けて通れません。<del>むしろ環境構築が一番むずかしい</del>
+ここではAtCoder環境で使える<strong>C# (.NET Core 3.1.201)</strong> の環境を作っていきましょう。
+環境はWSL上に作っていきます。
+| <a href="https://qiita.com/quzq/items/d7741d833d837d075fa4">WSL に .net core をインストールしてC#/F#/VBの開発環境を作成 - Qiita</a><BR><h6>**.NET Coreを使用した開発について**<BR>.NET Coreで開発するためには、最低限、.NET Core SDKをインストールすればよい。</h6> | <img src="http://capture.heartrails.com/120x120/cool/1637588766882?https://qiita.com/mamohacy/items/f2a8538bb0ff17833e0c" alt="">|
+|:&ndash;|:-:|</p>
+<p>↑の記事を参考にしましてWSL上に簡単なC#の実行環境を導入、それでは本編やっていきましょう。
+<br></p>
+<h2 id="ほんへ">ほんへ</h2>
+<h3 id="a問題">A問題</h3>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://atcoder.jp/contests/abc218/tasks/abc218_a">A - Weather Forecast</a><BR><h6></h6></th>
+<th align="center"><img src="http://capture.heartrails.com/120x120/cool?https://atcoder.jp/contests/abc218/tasks/abc218_a" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>整数Nと文字列Sが与えられるので、SのN文字目がoかxで判定する問題。</p>
+<details>
+    <summary>
+        ▶コード
+    </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">using System;
+
+namespace main
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            string s = Console.ReadLine();
+            if (s[n - 1] == &#39;o&#39;)
+            {
+                Console.WriteLine(&#34;Yes&#34;);
+            }
+            else
+            {
+                Console.WriteLine(&#34;No&#34;);
+            }
+        }
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div></details>
+<br>
+<p>めちゃめちゃ簡単な問題なのに自動生成のコードが長すぎて泣いちゃった。
+早速よくわからない概念、using、namespace、classとかが出てきましたね。
+いそいそと検索をかけると・・・</p>
+<p><a href="https://ufcpp.net/study/csharp/sp_namespace.html">名前空間 - C# によるプログラミング入門 | ++C++; // 未確認飛行 C</a>
+<a href="https://ufcpp.net/study/csharp/oo_class.html">クラス - C# によるプログラミング入門 | ++C++; // 未確認飛行 C</a></p>
+<p>namespaceを使ってclassを種類ごとに分けて管理する、またclassを使って機能をまとめて管理することができるんですねぇ～～なるほど
+namespaceは省略もできるっぽいので、今回の記事では省略する方向で行きましょう。
+<br>
+あと標準入力が</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">int n = int.Parse(Console.ReadLine());
+</code></pre></td></tr></table>
+</div>
+</div><p>stringで受け取ってそれぞれの型に変換する感じ、pythonっぽいですね
+<br></p>
+<h4 id="classとstructは違うんか">classとstructは違うんか？？</h4>
+<p>気になるのは<strong>class</strong>と<strong>struct</strong>の違い。
+C++ではclassとstructはほとんど違いの無いものとして扱うことができましたが、C#ではそうもいかないようです。C++では双方ともにstack領域にメモリを確保していましたが、classはメモリがheap領域に、structはメモリがstack領域に積まれるようです。</p>
+<p>C#で大規模なデータを高速で処理したいときは、structを使ってデータをstack領域に積むことで値型として扱い高速にアクセスする、とかいうことができるらしいです。ちょっと頭の片隅に入れておきたいですね。</p>
+<p>無知なもので詳しいことをあんまり語れないので、詳しく知りたい人は
+<a href="https://ufcpp.net/study/csharp/rm_gc.html">C# のメモリ管理 - C# によるプログラミング入門 | ++C++; // 未確認飛行 C </a>
+を参照してみてください。
+<br></p>
+<h3 id="b問題">B問題</h3>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://atcoder.jp/contests/abc218/tasks/abc218_b">B - qwerty</a><BR><h6></h6></th>
+<th align="center"><img src="http://capture.heartrails.com/120x120/cool?https://atcoder.jp/contests/abc218/tasks/abc218_b" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>問題は26個の数列Pが与えられて、一般的なアルファベットのi番目の文字がP<sub>i</sub>番目になった世界でのアルファベットの順番を出力する、という問題。
+普通にchar型の配列に指定された順番でアルファベットを詰めていけば解けそうですね。</p>
+<details>
+    <summary>
+        ▶コード
+    </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">using System;
+using System.Linq;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] S = Console.ReadLine().Split(&#39; &#39;).Select(i =&gt; int.Parse(i)).ToArray();
+
+        char[] ans = new char[26];
+        for (int i = 0; i &lt; 26; i++)
+        {
+            ans[i] = (char)(&#39;a&#39; + S[i] - 1);
+        }
+
+        for (int i = 0; i &lt; 26; i++)
+        {
+            Console.Write(ans[i]);
+        }
+        Console.WriteLine();
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div></details>
+<br>
+<p>配列を宣言するときにC++とかには無い文法、<strong>new</strong>が出てきました。C++では変数の宣言と同時にインスタンスが作成されていましたが、C#ではそうでは無いようです。</p>
+<p>例えば<code>int misw[];</code>としたとき、確保されるのはstack領域のみであり、<code>misw = int[334];</code>として初めてheap領域に実際の値を格納するメモリを確保します。</p>
+<p>これC++のように変数の宣言と同時にインスタンスを作成するようにしなかったのはなんでなんでしょうかね……？
+<br></p>
+<p>ところでB問題では普通の配列を使いましたが動的配列、Listを使う際は</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">List&lt;int&gt; S = Console.ReadLine().Split(&#39; &#39;).Select(i =&gt; int.Parse(i)).ToList();
+</code></pre></td></tr></table>
+</div>
+</div><p>と、配列とほとんど同じ要領で書くことができるようです。
+<br></p>
+<h3 id="c問題">C問題</h3>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://atcoder.jp/contests/abc218/tasks/abc218_c">C - Shapes</a><BR><h6></h6></th>
+<th align="center"><img src="http://capture.heartrails.com/120x120/cool?https://atcoder.jp/contests/abc218/tasks/abc218_c" alt=""></th>
+</tr>
+</thead>
+</table>
+<details><summary>▶コード・長い読む価値なし</summary>
+<p>文字列の配列が2つ与えられるので、2つの文字列配列の<code>#</code>で表された部分に関して回転、平行移動によって重ね合わせられるか、という問題。
+アルゴリズム的に難しいことは特になくて、上をごりごり実装していく。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+
+    public static List&lt;string&gt; Trim(List&lt;string&gt; s)
+    {
+        int u = 0, d = s.Count - 1, l = 0, r = s.Count - 1;
+        int n = s.Count;
+        bool flag = false;
+
+        for (; u &lt; n; u++)
+        {
+            flag = false;
+            for (int i = 0; i &lt; n; i++) if (s[u][i] == &#39;#&#39;) flag = true;
+            if (flag) break;
+        }
+
+        for (; d &gt;= 0; d--)
+        {
+            flag = false;
+            for (int i = 0; i &lt; n; i++) if (s[d][i] == &#39;#&#39;) flag = true;
+            if (flag) break;
+        }
+
+        for (; l &lt; n; l++)
+        {
+            flag = false;
+            for (int i = 0; i &lt; n; i++) if (s[i][l] == &#39;#&#39;) flag = true;
+            if (flag) break;
+        }
+
+        for (; r &gt;= 0; r--)
+        {
+            flag = false;
+            for (int i = 0; i &lt; n; i++) if (s[i][r] == &#39;#&#39;) flag = true;
+            if (flag) break;
+        }
+
+        List&lt;string&gt; res = new List&lt;string&gt;();
+        for (int i = 0; i &lt; d - u + 1; i++)
+        {
+            res.Add(s[u + i].Substring(l, r - l + 1));
+        }
+
+        return res;
+    }
+
+    public static List&lt;string&gt; Rotate(List&lt;string&gt; s)
+    {
+        int h = s.Count, w = s[0].Length;
+        List&lt;string&gt; res = new List&lt;string&gt;();
+        for (int i = 0; i &lt; w; i++)
+        {
+            char[] tmp = new char[h];
+            for (int j = 0; j &lt; h; j++)
+            {
+                tmp[h - j - 1] = s[j][i];
+            }
+            res.Add(new string(tmp));
+        }
+
+        return res;
+    }
+
+    static void Main(string[] args)
+    {
+        int n = int.Parse(Console.ReadLine());
+
+        List&lt;string&gt; S = new List&lt;string&gt;();
+        for (int i = 0; i &lt; n; i++)
+        {
+            S.Add(Console.ReadLine());
+        }
+
+        List&lt;string&gt; T = new List&lt;string&gt;();
+        for (int i = 0; i &lt; n; i++)
+        {
+            T.Add(Console.ReadLine());
+        }
+
+        S = Program.Trim(S);
+        T = Program.Trim(T);
+
+        bool flag = false;
+        for (int i = 0; i &lt; 4; i++)
+        {
+            if (S.SequenceEqual(T))
+            {
+                flag = true;
+            }
+            S = Program.Rotate(S);
+        }
+
+        if (flag) Console.WriteLine(&#34;Yes&#34;);
+        else Console.WriteLine(&#34;No&#34;);
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div></details>
+<br>
+<p>C#のstring型は要素が<strong>変更不可</strong>なので、下の画像のように要素変更することができないんですね。
+<figure>
+    <img src="/images/20211201_001453/01.png"/> 
+</figure>
+ <br>
+なので、文字列の要素を一部だけ変更するには、</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">string phrase = &#34;hanshin&#34;
+char[] phraseAsChars = phrase.ToCharArray();
+phraseAsChars[2] = &#39;4&#39;;
+</code></pre></td></tr></table>
+</div>
+</div><p>みたいに、一旦char型の配列に直す必要があります。ここは競プロをする上で非常にめんどくさpointですね。
+まあ文字列をこまこま処理するなんてことは競プロ以外ではほとんどやらないでしょうから、（やるにしても単語、文単位の置き換えくらいなもの？）これで困ることはあまりないでしょう。
+<br></p>
+<h4 id="staticとはなんぞや">staticとはなんぞや？？</h4>
+<p>staticは、<strong>クラス自身が変数やメソッドを持てるようにする</strong>機能のことのようです。</p>
+<p>ではC問題のコードの中でTrim関数、Rotate関数を宣言する際に付いているstaticを除いて実行してみるとどうなるでしょう。
+<code>Program.cs(85,13): error CS0120: An object reference is required for the non-static field, method, or property 'Program.Trim(List&lt;string&gt;)' [/home/tamacake39/ppcpp/main/main.csproj]</code>
+とエラーが発生して実効することができません。</p>
+<p>調べてみると
+| <a href="https://shirakamisauto.hatenablog.com/entry/2015/06/15/181428">staticメソッド内でstaticでないメンバを参照できない理由 - プログラミングとかブログ </a><BR><h6>11/10　間違っちゃいないけど正確でもなかったので書き直し<br>Mainメソッドなどstaticメソッド内でstaticでないメンバーを……</h6> | <img src="http://capture.heartrails.com/120x120/cool?https://shirakamisauto.hatenablog.com/entry/2015/06/15/181428" alt="">|
+|:&ndash;|:-:|</p>
+<p>こういうことらしい</p>
+<blockquote>
+<p>クラス内のメンバーはクラスのインスタンスを生成して初めて使用可能（メモリ展開される）となります。しかし上記例のStaticMethodはstaticなメソッドなので、インスタンス化せず使用できます。（メモリが最初から確保されている）
+ところが、上記例のようにそのメソッド内にインスタンス化しなければ使えない変数objが含まれていると、メソッドを呼び出した際に、使用不可能な（メモリ上に存在しない）変数objにアクセスすることになり、正常な処理ができなくなります。</p>
+</blockquote>
+<p>なるほど。main関数のようなstaticメソッドからインスタンスメソッドを呼び出そうとすると存在しないメモリへアクセスしてしまうことになるんですね。</p>
+<p>ではどうコードを書けばよかったのかというと、staticを除いていた場合は例えば</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Program Trimer = new Program();
+S = Trimer.Trim(S);
+T = Trimer.Trim(T);
+</code></pre></td></tr></table>
+</div>
+</div><p>とインスタンス化してあげる必要があります。
+しかし上でいうTrimインスタンスはデータに対して定まった一つのデータを返すいわば「関数」のため、そもそも複数のインスタンスが存在する必要がありません。
+そこで唯一存在する<strong>staticメソッド</strong>として宣言することで効率よくデータを処理することができるわけですね。
+<span style="font-size:80%; color: gray;">（※ここ少し勘違いが入っている可能性があります。間違いがあったら指摘お願いします。）</span></p>
+<h3 id="d問題">D問題</h3>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://atcoder.jp/contests/abc218/tasks/abc218_d">D - Rectangles</a><BR><h6></h6></th>
+<th align="center"><img src="http://capture.heartrails.com/120x120/cool?https://atcoder.jp/contests/abc218/tasks/abc218_d" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>たくさん点が与えられるので、そのうち4つを選んで長方形を作れるかという問題。
+長方形は対角線の2点が分かれば決定できるので、<strong>連想配列</strong>などを使って2点選んだときにもう2点が存在するかを判定すればOK</p>
+<details><summary>▶コード</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n = int.Parse(Console.ReadLine());
+        Dictionary&lt;Tuple&lt;int, int&gt;, bool&gt; map = new Dictionary&lt;Tuple&lt;int, int&gt;, bool&gt;();
+        List&lt;Tuple&lt;int, int&gt;&gt; input = new List&lt;Tuple&lt;int, int&gt;&gt;();
+        for (int i = 0; i &lt; n; i++)
+        {
+            var values = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            input.Add(new Tuple&lt;int, int&gt;(values[0], values[1]));
+            map[new Tuple&lt;int, int&gt;(values[0], values[1])] = true;
+        }
+        int ans = 0;
+        for (int i = 0; i &lt; n; i++)
+        {
+
+            for (int j = i + 1; j &lt; n; j++)
+            {
+                if (input[i].Item1 == input[j].Item1 || input[i].Item2 == input[j].Item2) continue;
+                if (map.ContainsKey(new Tuple&lt;int, int&gt;(input[i].Item1, input[j].Item2)) &amp;&amp;
+                    map.ContainsKey(new Tuple&lt;int, int&gt;(input[j].Item1, input[i].Item2)))
+                {
+                    ans++;
+                }
+            }
+        }
+        Console.WriteLine(ans / 2);
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div></details>
+<br>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://qiita.com/takutoy/items/37e81b916271bf43b527">C#(.NET)コレクションの使い方と計算量 - Qiita</a> <BR><h6></h6></th>
+<th align="center"><img src="http://capture.heartrails.com/120x120/cool?https://qiita.com/takutoy/items/37e81b916271bf43b527" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>連想配列と一概に言えど、何個かあるらしい。違いはわからないけれど、要素の検索に関して、ListがO(n)であるのに対して、DictionaryとHashSetがO(1)（？！？！これマジ？！？！）、SortedDictionaryとSortedSetがO(log n)なことを覚えておけば良さそう。</p>
+<p>あと上のコード内でmapからtupleの要素を検索する際に
+<code>map.ContainsKey(new Tuple&lt;int, int&gt;(input[j].Item1, input[i].Item2)))</code>
+としているのですが、これは毎回newをする必要があるのでしょうか。コンストラクタの無用な作成はプログラムの低速化の元だと聞いたので、解決策があればぜひ教えていただきたいです。</p>
+<h3 id="e問題">E問題</h3>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://atcoder.jp/contests/abc218/tasks/abc218_e">E - Destruction</a><BR><h6></h6></th>
+<th align="center"><img src="http://capture.heartrails.com/120x120/cool?https://atcoder.jp/contests/abc218/tasks/abc218_e" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>典型最小全域木の問題
+親の顔より見た<strong>UnionFind</strong>を使って解いていきましょう。</p>
+<details><summary>▶コード・長い読む価値なし</summary>
+<p>当然C#のdsuライブラリは持っていないので、ACLを参考に書いていきます。
+基本的なところはC++と変わらないので特に難しいことは無いです。（むしろ闇の言語C++の方が意味不明……）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var nm = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        int n = nm[0], m = nm[1];
+        List&lt;Tuple&lt;int, int, int&gt;&gt; cab = new List&lt;Tuple&lt;int, int, int&gt;&gt;();
+        for (int i = 0; i &lt; m; i++)
+        {
+            var input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            cab.Add(new Tuple&lt;int, int, int&gt;(input[2], input[0] - 1, input[1] - 1));
+        }
+        cab.Sort();
+
+        long ans = 0;
+        dsu uf = new dsu(n);
+        for (int i = 0; i &lt; m; i++)
+        {
+            if (!uf.merge(cab[i].Item2, cab[i].Item3))
+            {
+                ans += cab[i].Item1 &gt; 0 ? cab[i].Item1 : 0;
+            }
+        }
+        Console.WriteLine(ans);
+    }
+}
+
+class dsu
+{
+    public dsu() { }
+    public dsu(int n)
+    {
+        _n = n;
+        parent_or_size = new List&lt;int&gt;();
+        for (int i = 0; i &lt; n; i++) parent_or_size.Add(-1);
+    }
+    public bool merge(int a, int b)
+    {
+        int x = leader(a), y = leader(b);
+        if (x == y) return false;
+        if (-parent_or_size[x] &lt; -parent_or_size[y]) Swap(x, y);
+        parent_or_size[x] += parent_or_size[y];
+        parent_or_size[y] = x;
+        return true;
+    }
+    public bool same(int a, int b)
+    {
+        return leader(a) == leader(b);
+    }
+    public int leader(int a)
+    {
+        if (parent_or_size[a] &lt; 0) return a;
+        return parent_or_size[a] = leader(parent_or_size[a]);
+    }
+    public int size(int a)
+    {
+        return -parent_or_size[leader(a)];
+    }
+    void Swap&lt;T&gt;(T a, T b)
+    {
+        var t = a;
+        a = b;
+        b = t;
+    }
+    private int _n;
+    private List&lt;int&gt; parent_or_size;
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>ところでC#には標準でSwap関数が用意されてないのは驚きました。別に無くても何も困らないけど……</p>
+</details>
+<br>
+<p>classを作成してその中にメソッドを定義しているわけですが、各メソッドの前には<strong>public</strong>と<strong>private</strong>が記述されています。これはアクセスを制御するための機能で、これを用いると別のクラスから各メソッドに対するアクセスを自由に許可したり禁止したりすることができます。</p>
+<p>これがあると何が嬉しいのかというと、外部から使って欲しいメソッドと使われたくないメソッドを明確に分けることで、メソッドが想定されていない使い方をされることによる予期せぬ動作を防止できたり、プログラムが複雑になっても使われたい機能を明確にすることができます。
+非常にバグらせにくくコードを書くことができる便利な機能ですね。</p>
+<br>
+<br>
+<h2 id="感想">感想</h2>
+<p>C#……難しい……これを初心者向け言語として紹介してる人はどういう考えなんでしょうか……
+まあ確かに<strong>unity</strong>や<strong>windowsのGUIアプリ</strong>には欠かせない言語ですから、遅かれ早かれ入門しないといけない言語というのは確かですね。
+あと、JavaやC#は<strong>インタープリターを介して実行するから遅い</strong>ので競プロには向かないという定説があるようですが、今回入門した限りではあまりその<strong>遅さを感じなかった</strong>のは意外でした。</p>
+<p>なんというかC#、至るところで型のことを意識させてくれるので、C++で<strong>クソコード</strong>ばかり錬成している自分に突き刺さりました。C++では暗黙の型変換をしまくってしまうのですが、意識的にキャストする必要があるC#ではバグらせにくい？のでしょうか。</p>
+<br>    
+<br>    
+<br>
+<h3 id="蛇足">蛇足</h3>
+<p>これから25日間続く（はず）アドベントカレンダー、<a href="https://adventar.org/calendars/6434">後続の記事</a>もぜひよろしくおねがいします！
+明日は森くんの「<span style="font-size:150%; color: red;">ク　ソ　記　事　！　！　！　！</span>」だそうです。森のことですからクソ記事といいながらなかなかクオリティの高い記事を書いてくるはずです。ワクワクですね。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">作成者</span>
+    <span class="item-content">たまかけ</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">最終更新時刻</span>
+    <span class="item-content">
+        2021-12-01
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">ライセンス</span>
+    <span class="item-content">MIT</span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/c/">C#</a>
+          <a href="/tags/%E5%85%A5%E9%96%80/">入門</a>
+          <a href="/tags/%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/">アドベントカレンダー</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/20211218_203426/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">学生マイクロマウス大会の感想（懺悔）</span>
+            <span class="prev-text nav-mobile">前の記事へ</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://twitter.com/tamacake39" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://github.com/tamacake39" class="iconfont icon-github" title="github"></a>
+      <a href="https://instagram.com/tamacake39" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://atcoder.jp/user/tamacake39" class="iconfont icon-link" title="link"></a>
+  <a href="https://tamacake39.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022&nbsp;<span>たまかけ</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
