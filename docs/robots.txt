@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://tamacake39.github.io/sitemap.xml
