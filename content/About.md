@@ -1,9 +1,7 @@
 ---
 title: "About tamacake39"
-date: 202-02-03
-draft: false
-tags: []
-categories: []
+date: 2022-02-03
+images: []
 ---
 
 {{<figure src="/images/tamacakeIcon.png" width="200" height="200" class="center">}}

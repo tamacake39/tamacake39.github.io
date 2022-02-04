@@ -1,10 +1,7 @@
 ---
-ispage: true
 title: "Here is..."
 date: 2022-02-03
-draft: false
-tags: []
-categories: []
+images: []
 ---
 
 # ほ〜むぺ〜じ

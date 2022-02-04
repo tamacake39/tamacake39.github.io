@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tamacake39.github.io/about/</loc>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://tamacake39.github.io/</loc>
     <lastmod>2022-02-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -9,35 +16,7 @@
   </url>
   
   <url>
-    <loc>https://tamacake39.github.io/categories/</loc>
-    <lastmod>2021-12-18T20:34:26+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://tamacake39.github.io/post/</loc>
-    <lastmod>2021-12-18T20:34:26+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tamacake39.github.io/tags/</loc>
-    <lastmod>2021-12-18T20:34:26+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tamacake39.github.io/tags/%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC/</loc>
-    <lastmod>2021-12-18T20:34:26+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tamacake39.github.io/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</loc>
     <lastmod>2021-12-18T20:34:26+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -51,20 +30,6 @@
   </url>
   
   <url>
-    <loc>https://tamacake39.github.io/categories/%E6%97%A5%E8%A8%98/</loc>
-    <lastmod>2021-12-18T20:34:26+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tamacake39.github.io/tags/c#/</loc>
-    <lastmod>2021-12-01T00:14:53+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://tamacake39.github.io/post/20211201_001453/</loc>
     <lastmod>2021-12-01T00:14:53+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -72,21 +37,7 @@
   </url>
   
   <url>
-    <loc>https://tamacake39.github.io/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</loc>
-    <lastmod>2021-12-01T00:14:53+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tamacake39.github.io/tags/%E5%85%A5%E9%96%80/</loc>
-    <lastmod>2021-12-01T00:14:53+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://tamacake39.github.io/about/</loc>
+    <loc>https://tamacake39.github.io/series/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

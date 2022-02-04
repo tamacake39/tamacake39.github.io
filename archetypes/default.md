@@ -1,8 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+author: "たまかけ"
 tags: []
 categories: []
+images: []
 ---
 

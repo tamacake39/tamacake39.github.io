@@ -50,7 +50,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
-  since = "2021"            # Site creation time          # 站点建立时间
+  # since = "2021"            # Site creation time          # 站点建立时间
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
   gitRepo = "https://github.com/tamacake39/tamacake39.github.io/"
@@ -58,7 +58,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Here is..."        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["たまかけ", "ブログ", "プログラミング", "マイクロマウス"]
+  title = "tamacake39's blog"  # titleが複数回登場して気持ち悪いが、これで正解
   description = "ここは……"
+  twitterID = "@thotgamma"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archivePaginate = 50
@@ -122,7 +124,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     m-instagram = "https://instagram.com/tamacake39"
   #  n-gitlab = "http://localhost:1313"
   #  o-bilibili = "http://localhost:1313"
-    p-link = "https://atcoder.jp/user/tamacake39"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
@@ -155,3 +156,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 #  section = ["HTML", "RSS"]
 #  taxonomy = ["HTML", "RSS"]
 #  taxonomyTerm = ["HTML"]
+
+[taxonomies]             # この2行は意味がわからなければまだ
+  series = "series"      # 利用していないということなので意識せず消してよい
