@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #fffaf0;
+    /* 暖色系の背景色 */
 }
 
 header {
-    background-color: #333;
+    background-color: #8b4513;
+    /* 暖色系のダークオレンジ色 */
     color: white;
     text-align: center;
     padding: 0.5em 0;
@@ -18,7 +20,8 @@ header h1 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #8b4513;
+    /* 暖色系のダークオレンジ色 */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -34,8 +37,10 @@ footer {
 }
 
 .icon {
-    width: 150px; /* アイコンの幅を小さく */
-    height: auto; /* アスペクト比を維持 */
+    width: 150px;
+    /* アイコンの幅を小さく */
+    height: auto;
+    /* アスペクト比を維持 */
 }
 
 .color {
@@ -43,10 +48,21 @@ footer {
 }
 
 @keyframes a {
-    0%   { color: magenta; }
-    33%  { color: cyan; }
-    67%  { color: yellow; }
-    100% { color: magenta; }
+    0% {
+        color: magenta;
+    }
+
+    33% {
+        color: cyan;
+    }
+
+    67% {
+        color: yellow;
+    }
+
+    100% {
+        color: magenta;
+    }
 }
 
 .rotate {
@@ -57,7 +73,15 @@ footer {
 }
 
 @keyframes b {
-    0% { transform: scale(1.0, 2.0) rotate(0deg); }
-    50% { transform: scale(3.0, 1.0) rotate(360deg); }
-    100% { transform: scale(1.0, 2.0) rotate(360deg); }
+    0% {
+        transform: scale(1.0, 2.0) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(3.0, 1.0) rotate(360deg);
+    }
+
+    100% {
+        transform: scale(1.0, 2.0) rotate(360deg);
+    }
 }
